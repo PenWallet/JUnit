@@ -19,7 +19,7 @@ public class GestoraBuscaMinas {
  E/S: No hay
  Postcondiciones: El array tendrá un tamaño de 8x8 con 10 minas (cargadas aleatoriamente)
  **************************************************************************/
-    public Casilla[][] CrearTableroFacil(){
+    public static Casilla[][] CrearTableroFacil(){
 
         Casilla[][] tablero = new Casilla[8][8];
 
@@ -433,7 +433,7 @@ public class GestoraBuscaMinas {
  E/S: No hay
  Postcondiciones: Será 0 o mayor
  **************************************************************************/
-    public int ContadorMinas(Casilla[][] tablero, int i, int j, int nivel){
+    public static int ContadorMinas(Casilla[][] tablero, int i, int j, int nivel){
 
         int cm = 0;
 
