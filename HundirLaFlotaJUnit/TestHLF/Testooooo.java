@@ -37,20 +37,27 @@ public class Testooooo {
     public boolean ContarBarcos(int[][] array)
     {
         int contadorGeneral = 0, cB5 = 0, cB4 = 0, cb3 = 0, cB2 = 0;
+        boolean correcto = true;
 
-        for(int i = 0; i < array.length; i++)
+        for(int i = 0; i < array.length && correcto; i++)
         {
-            for(int j = 0; j < array[0].length; j++)
+            for(int j = 0; j < array[0].length && correcto; j++)
             {
                 if(array[i][j] == 1)
                 {
                     contadorGeneral++;
                     if(contadorGeneral == 1)
                     {
-						
+
+                    }
+                    else if(contadorGeneral == 2)
+                    {
+
                     }
 
                 }
+
+                correcto = CasillasAlrededor(array, i, j, contadorGeneral, true);
             }
         }
     }
