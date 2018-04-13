@@ -47,7 +47,7 @@ public class Testooooo {
                     contadorGeneral++;
                     if(contadorGeneral == 1)
                     {
-
+						
                     }
 
                 }
@@ -123,8 +123,6 @@ public class Testooooo {
                    correcto = false;
                if(i != 0 && j != (array[0].length - 1) && array[i-1][j+1] == 1)
                    correcto = false;
-               if(j != (array[0].length - 1) && array[i][j+1] == 1)
-                   correcto = false;
                if(i != (array.length - 1) && j != 0 && array[i+1][j-1] == 1)
                    correcto = false;
                if(i != (array.length - 1) && array[i+1][j] == 1)
@@ -165,8 +163,6 @@ public class Testooooo {
                 if(i != 0 && j != (array[0].length - 1) && array[i-1][j+1] == 1)
                     correcto = false;
                 if(j != 0 && array[i][j-1] == 1)
-                    correcto = false;
-                if(j != (array[0].length - 1) && array[i][j+1] == 1)
                     correcto = false;
                 if(i != (array.length - 1) && j != 0 && array[i+1][j-1] == 1)
                     correcto = false;
